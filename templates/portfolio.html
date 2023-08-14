@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>My Portfolio</title>
+{% endblock %}
+
+{% block body %}
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="www.gluigi.com">About</a></li>
+                <li><a href="https://github.com/gharahld">Projects</a></li>
+                <li><a href="www.linkedin.com/in/gharahld-bruno-4b828619b/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>"Hello, my name is Gharahld L. Bruno and I'm a junior web developer with a strong foundation in HTML, CSS, and JavaScript,Django,Flask and C#.<br> I've always had a passion for technology and building things, which led me to pursue a career in web development.<br> I love being able to create dynamic and responsive web applications that provide users with an engaging and intuitive experience.
+                Throughout my career, I've worked on various projects, from small personal websites to large-scale e-commerce platforms.<br> I enjoy the challenge of taking a concept and turning it into a fully-functional website or web application, and I'm always looking for ways to improve my skills and stay up-to-date with the latest technologies.
+
+Aside from technical skills, I also have strong communication and problem-solving skills.<br> I believe that effective communication is key to a successful project, and I strive to keep my clients and team members informed and up-to-date throughout the development process.<br> When challenges arise, I approach them with a positive attitude and a willingness to find creative solutions.
+
+Overall, my goal as a web developer is to continue growing my skills and knowledge while delivering high-quality work that meets the needs of my clients and end-users.<br> I'm excited about the future of web development and look forward to being a part of it.".</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <p>I buil a responsive windows form including the database.</p>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>build a python guess game as a database i use openpyxl to hold the information.</p>
+                </li>
+                <li>
+                    <h3>Project 3</h3>
+                    <p>I build a Django web page for e-commerce fully functional.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+</body>
+</html>
+{% endblock %}

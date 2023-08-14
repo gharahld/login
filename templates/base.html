@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+</head>
+<body>
+    {% block body %}
+    {% if password != inputPassword %}
+        <p>Please enter the right password</p>
+    {% endif %}
+
+    {% endblock %}
+</body>
+</html>
